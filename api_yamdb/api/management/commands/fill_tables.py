@@ -4,7 +4,7 @@ from django.core.management.base import BaseCommand
 from rest_framework.generics import get_object_or_404
 
 from reviews.models import Review, Comment
-from titles.models import Titles, Categories, Genres
+from titles.models import Title, Categories, Genres
 from users.models import CustomUser
 
 
@@ -21,7 +21,7 @@ class Command(BaseCommand):
         Categories: 'category.csv',
         Genres: 'genre.csv',
         CustomUser: 'users.csv',
-        Titles: 'titles.csv',
+        Title: 'titles.csv',
         Review: 'review.csv',
         Comment: 'comments.csv'
     }
