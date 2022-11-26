@@ -21,22 +21,10 @@ DB_HOST=...
 DB_PORT=...
 ```
 
-Запустить docker-compose:
+Запустить makefile:
 
 ```
-$ docker-compose up 
-```
-
-Выполнить миграции:
-
-```
-$ docker-compose exec web python manage.py migrate
-```
-
-Заполнить бвзу данных:
-
-```
-$ docker-compose exec web python manage.py fill_tables
+$ make build 
 ```
 
 #### Технологии
